@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Один экран: колонка, панель иконок прижата вниз */
+.general {
+  position: relative;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ФОН — на самом заднем слое, на весь экран */
+.bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  user-select: none;
+}
+
+.bats-container {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  justify-content: space-around;
+  /* Выравниваем элементы по нижней линии, чтобы все мышки "стояли" на одном полу */
+  align-items: flex-end; 
+  padding: 0 4vw;
+  /* Слегка приподнимаем от панели иконок, если нужно, чтобы они не прилипали к самому низу */
+  margin-bottom: 2vh; 
+}
+
+.bat {
+  /* Убираем процентную ширину, которая ломала масштаб */
+  width: auto;
+  /* Задаем фиксированную высоту в относительных единицах экрана (vh) */
+  height: 55vh; 
+  /* Ограничиваем максимальную высоту для маленьких экранов */
+  max-height: 90%; 
+  
+  /* Сохраняем пропорции SVG без искажений */
+  object-fit: contain; 
+  /* Гарантируем, что точка опоры при масштабировании будет снизу (от пола) */
+  transform-origin: bottom center; 
+  
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s;
+}
+
+/* подсветка мышки, над которой сейчас иконка */
+.bat.hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.9));
+}
+
+/* ПАНЕЛЬ ИКОНОК — внизу */
+.icon-panel {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background-color: #E39B6A;
+}
+
+.icons {
+  min-height: 31vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons .icon {
+  width: 125px;
+  max-width: 8vw;
+  cursor: grab;
+  touch-action: none;      /* чтобы работало на телефоне */
+  user-select: none;
+  transition: opacity 0.2s;
+}
+
+/* иконка, роль которой уже занята */
+.icon.used {
+  opacity: 0.35;
+}
+
+/* "призрак", который тащится за курсором */
+.drag-ghost {
+  position: fixed;
+  z-index: 1000;
+  pointer-events: none;
+  width: 110px;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
