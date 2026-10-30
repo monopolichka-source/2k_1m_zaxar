@@ -1,0 +1,30 @@
+<svg width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="124" height="124" rx="62" fill="white"/>
+<g filter="url(#filter0_d_4_192)">
+<path d="M70.3016 80.5086L59.9829 82.9371C59.9829 82.9371 61.0917 108.869 65.2724 112.648C69.4531 116.427 73.6559 114 75.6361 111C77.6163 108 70.3016 82.9371 70.3016 82.9371L70.3016 80.5086Z" fill="url(#paint0_linear_4_192)"/>
+<ellipse cx="62.2379" cy="46.0756" rx="37.1216" ry="38.0756" fill="url(#paint1_radial_4_192)"/>
+<path d="M74.207 21.6988C74.207 24.6659 70.0521 24.0865 64.9266 24.0865C59.8012 24.0865 55.6462 24.6659 55.6462 21.6988C55.6462 18.7316 59.8012 16.3263 64.9266 16.3263C70.0521 16.3263 74.207 18.7316 74.207 21.6988Z" fill="#C9D9E6"/>
+<path d="M83.3684 57.1534C80.6003 58.2217 86.2378 48.6898 82.6503 39.3947C79.0627 30.0995 73.8861 24.9273 76.6542 23.859C79.4223 22.7906 88.6917 26.3832 92.2792 35.6784C95.8667 44.9735 86.1365 56.085 83.3684 57.1534Z" fill="#F2F9FF"/>
+</g>
+<defs>
+<filter id="filter0_d_4_192" x="23.1163" y="8" width="76.2432" height="108.58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-2" dy="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_192"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_192" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_4_192" x1="61.634" y1="94.4371" x2="68.4687" y2="99.5095" gradientUnits="userSpaceOnUse">
+<stop offset="0.0672077" stop-color="#271E33"/>
+<stop offset="0.0673077" stop-color="#362E4C"/>
+</linearGradient>
+<radialGradient id="paint1_radial_4_192" cx="0" cy="0" r="1" gradientTransform="matrix(-2.07588 41.1929 -41.1423 -1.72347 64.3138 46.0756)" gradientUnits="userSpaceOnUse">
+<stop offset="0.773938" stop-color="#83ACE1" stop-opacity="0.47"/>
+<stop offset="0.774038" stop-color="#4F4769"/>
+<stop offset="0.826823" stop-color="#524D6D"/>
+<stop offset="0.826923" stop-color="#261D32"/>
+</radialGradient>
+</defs>
+</svg>

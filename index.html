@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Daybat</title>
+</head>
+<body>
+    <section class="general">
+        <img src="assets/bg.png" class="bg" alt="" draggable="false">
+
+        <div class="bats-container">
+            <div class="bat-slot">
+                <img class="bat" src="assets/bat.svg" alt="" draggable="false" />
+                <div class="bat-controls">
+                    <button class="pause-btn" title="Пауза">⏸</button>
+                    <input class="vol" type="range" min="0" max="1" step="0.05" value="1" title="Громкость">
+                </div>
+            </div>
+            <div class="bat-slot">
+                <img class="bat" src="assets/bat.svg" alt="" draggable="false" />
+                <div class="bat-controls">
+                    <button class="pause-btn" title="Пауза">⏸</button>
+                    <input class="vol" type="range" min="0" max="1" step="0.05" value="1" title="Громкость">
+                </div>
+            </div>
+                        <div class="bat-slot">
+                <img class="bat" src="assets/bat.svg" alt="" draggable="false" />
+                <div class="bat-controls">
+                    <button class="pause-btn" title="Пауза">⏸</button>
+                    <input class="vol" type="range" min="0" max="1" step="0.05" value="1" title="Громкость">
+                </div>
+            </div>
+                        <div class="bat-slot">
+                <img class="bat" src="assets/bat.svg" alt="" draggable="false" />
+                <div class="bat-controls">
+                    <button class="pause-btn" title="Пауза">⏸</button>
+                    <input class="vol" type="range" min="0" max="1" step="0.05" value="1" title="Громкость">
+                </div>
+            </div>
+        </div>
+            <button class="global-pause" id="globalPause" disabled>⏸ Пауза</button>
+        <div class="icon-panel">
+            <div class="icons">
+                <button class="act" data-act="1">1 акт</button>
+                <button class="act" data-act="2">2 акт</button>
+                <button class="act" data-act="3">3 акт</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
